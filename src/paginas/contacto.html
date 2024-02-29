@@ -8,6 +8,7 @@
     <title>Contacto</title>
 </head>
 <body>
+    <script src="../Js/contacto.js"></script>
     <header>
         <div class="navegacion">
             <h2 class="logo">Logotipo</h2>
@@ -25,12 +26,12 @@
             <div class="form-container sign-in">
                 <form>
                     <h1>Formulario de Contacto</h1>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Asunto">
-                    <input type="text" placeholder="Descripción">
-                    <button>Enviar</button>
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <input type="text" id="apellido" placeholder="Apellido" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="asunto" placeholder="Asunto" required>
+                    <input type="text" id="descripcion" placeholder="Descripción" required>
+                    <button type="submit" onclick="validarFormulario()">Enviar</button>
                 </form>
             </div>
             <div class="toggle-container">

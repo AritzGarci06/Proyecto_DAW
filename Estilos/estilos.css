@@ -38,17 +38,12 @@ header nav a {
     font-size: 18px;
 }
 
-header nav a:hover,
-header nav a.active {
-    color: #FFF;
-}
-
 /* Pelicula Principal */
 .pelicula-principal {
     font-size: 12px;
     min-height: 40.62em;
     color: #FFF;
-    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%) , url(../Img/peliculaprincipal.jpg);
+    background: linear-gradient(rgba(54, 54, 54, 0.5) 0%, rgba(39, 39, 39, 0.5) 100%) , url(../Img/peliculaprincipal.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -62,16 +57,16 @@ header nav a.active {
 }
 
 .pelicula-principal .titulo {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 3.12em;
     margin-bottom: 0.4em;
 }
 
 .pelicula-principal .descripcion {
     font-weight: normal;
-    font-size: 1.3em;
-    line-height: 1.75em;
-    max-width: 50%;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    max-width: 48%;
     margin-bottom: 1.25em;
 }
 

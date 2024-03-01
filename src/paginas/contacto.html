@@ -6,9 +6,24 @@
     <link rel="stylesheet" href="../Estilos/contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Contacto</title>
+    <script>
+        function validarFormulario() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var email = document.getElementById("email").value;
+            var asunto = document.getElementById("asunto").value;
+            var descripcion = document.getElementById("descripcion").value;
+
+            if (nombre === "" || apellido === "" || email === "" || asunto === "" || descripcion === "") {
+                alert("Todos los campos son obligatorios. Por favor, complete todos los campos.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
-    <script src="../Js/contacto.js"></script>
+	<script src="../Js/contacto.js"></script>
     <header>
         <div class="navegacion">
             <h2 class="logo">Logotipo</h2>
@@ -24,14 +39,14 @@
     <div class="centrar">
         <div class="container" id="container">
             <div class="form-container sign-in">
-                <form>
+                <form onsubmit="return validarFormulario()">
                     <h1>Formulario de Contacto</h1>
                     <input type="text" id="nombre" placeholder="Nombre" required>
                     <input type="text" id="apellido" placeholder="Apellido" required>
                     <input type="email" id="email" placeholder="Email" required>
                     <input type="text" id="asunto" placeholder="Asunto" required>
                     <input type="text" id="descripcion" placeholder="Descripción" required>
-                    <button type="submit" onclick="validarFormulario()">Enviar</button>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
             <div class="toggle-container">

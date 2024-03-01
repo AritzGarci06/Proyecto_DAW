@@ -39,11 +39,11 @@ header .logo {
     margin: auto;
 }
 
-.navegacion .logo {
+/*.navegacion .logo {
     width: 130px;
     height: 100px;
     margin-left: 140px;
-}
+}*/
 
 header nav a {
     color: #AAA;

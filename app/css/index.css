@@ -43,7 +43,7 @@ header nav a {
     font-size: 12px;
     min-height: 40.62em;
     color: #FFF;
-    background: linear-gradient(rgba(54, 54, 54, 0.5) 0%, rgba(39, 39, 39, 0.5) 100%) , url(../Img/peliculaprincipal.jpg);
+    background: linear-gradient(rgba(54, 54, 54, 0.5) 0%, rgba(39, 39, 39, 0.5) 100%) , url(../img/peliculaprincipal.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;

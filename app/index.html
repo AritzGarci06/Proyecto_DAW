@@ -2,43 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="./img/logo.png"/>
+    <meta name="Film Fan" content="Nuestra misión es ofrecer a nuestros usuarios la mejor experiencia 
+    de entretenimiento en línea, brindando acceso a una amplia gama de contenido original y de 
+    alta calidad.">
     <title>Film Fan</title>
 </head>
 <body>
-    <header>
-        <div class="navegacion">
-            <h2 class="logo">Logotipo</h2>
-            <nav>
-                <a href="./index.html">Inicio</a>
-                <a href="#">Peliculas</a>
-                <a href="#">Mi lista</a>
-                <a href="./pages/contacto.html">Contacto</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="pelicula-principal">
-            <div class="navegacion">
-                <h3 class="titulo">
+    <body>
+        <header>
+            <div class="navigation">
+                <p class="logo">Film Fan</p>
+                <nav>
+                    <a href="#" class="nav-menu-link">Inicio</a></li>
+                    <a href="#" class="nav-menu-link">Peliculas</a></li>
+                    <a href="#" class="nav-menu-link">Mi lista</a></li>
+                    <a href="#" class="nav-menu-link">Contacto</a></li>
+                </nav>
+            </div>
+        </header>
+    
+        <section class="pelicula-principal">
+            <div class="navigation">
+                <h2 class="pelicula-principal-title">
                     La sociedad de la Nieve
-                </h3>
-                <p class="descripcion">
+                </h2>
+                <p class="pelicula-principal-description">
                     "La Sociedad de la Nieve" narra la desgarradora historia del accidente 
                     aéreo en los Andes, donde los supervivientes, principalmente jugadores del equipo de 
                     rugby del Old Christians Club de Montevideo, se ven forzados a comerse unos a otros para 
                     sobrevivir en el remoto corazón de la cordillera.
                 </p>
-                <button class="boton"><i class="fas fa-play"></i>Reproducir</button>
-                <button class="boton"><i class="fas fa-info-circle"></i>Mas Informacion</button>
+                <button class="pelicula-principal-boton"><i></i>Reproducir</button>
+                <button class="pelicula-principal-boton"><i></i>Mas Informacion</button>
             </div>
-        </div>
-    </main>
+        </section>
 
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script defer src="/_vercel/insights/script.js"></script>
+        
+
+        <section class="peliculas-semana">
+            <div class="peliculas-recomendadas contenedor">
+                <div class="contenedor-titulo-controles navigation">
+                    <h3>Películas Recomendadas</h3>
+                    <div class="indicadores"></div>
+                </div>
+    
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+    
+                    <div class="contenedor-carousel">
+                        <div class="carousel">
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/spiderman.png"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/batman.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/avatar.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/vengadores-endgame.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/dune.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/spiderman.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/spiderman.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/spiderman.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/spiderman.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/spiderman.png" alt=""></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="./img/.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+        </section>
+
+    <footer>
+        <section>
+            <p class="footer">
+                Copyright &copy; 2024 - All rights reserved
+            </p>
+        </section>
+        
+    </footer>
 </body>
 </html>
